@@ -1,6 +1,8 @@
 # EmployeeFire
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+This is an angular project with firebase as backend..
+Its a CRUD project..
+Feel free to contribute
 
 ## Development server
 
