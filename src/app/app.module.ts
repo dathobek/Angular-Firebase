@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import {AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
+=======
+>>>>>>> 3f6eb4d3c28741a62e22a4418a5ee7b58ee505d6
 
 
 import { AppComponent } from './app.component';
@@ -23,8 +26,12 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     // initializing firebase.
     AngularFireModule.initializeApp(environment.FirebaseConfig),
     AngularFireDatabaseModule,
+<<<<<<< HEAD
     BrowserModule,
     FormsModule
+=======
+    BrowserModule
+>>>>>>> 3f6eb4d3c28741a62e22a4418a5ee7b58ee505d6
   ],
   providers: [],
   bootstrap: [AppComponent]
