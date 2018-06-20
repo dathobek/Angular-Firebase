@@ -1,6 +1,6 @@
 
 
-<form #employeeForm="ngForm">
+<form #employeeForm="ngForm" (ngSubmit) = "onSubmit(employeeForm)">
   <div class="form-group">
     <label >Name</label>
     <input class="form-control" name="name" #name="ngModel" [(ngModel)]="employeeService.name" placeholder="FullName">
@@ -14,14 +14,16 @@
     <input class="form-control" name="office" #office="ngModel" [(ngModel)]="employeeService.office" placeholder="Staff Office">
   </div>
   <div class="form-group">
-    <label >Salary</label>
-    <div class="form-group">
-      <div class="form-group-addon">
-        <i class="fa fa-dollar">Yoopi</i>
-      </div>
-      <input class="form-control" name="salary" #salary="ngModel" [(ngModel)]="employeeService.salary" placeholder="Staff Salary">
-    </div>
-    
+    <label >Salary</label>   
+        <input class="form-control" name="salary" #salary="ngModel" [(ngModel)]="employeeService.salary" placeholder="Staff Salary">      
+  </div>
+  <div class="form group">
+    <button class="btn btn-default" type="submit">
+      <i class="fa fa-floppy-o"></i>
+      Submit</button>
+    <button class="btn btn-default" type="button" (click)="resetForm(employeeForm)">
+      <i class="fa fa-repeat"></i>
+      Reset</button>
   </div>
 </form> 
 
