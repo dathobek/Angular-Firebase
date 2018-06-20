@@ -4,7 +4,10 @@ import {AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
+=======
+>>>>>>> 3f6eb4d3c28741a62e22a4418a5ee7b58ee505d6
 =======
 >>>>>>> 3f6eb4d3c28741a62e22a4418a5ee7b58ee505d6
 
@@ -27,8 +30,12 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AngularFireModule.initializeApp(environment.FirebaseConfig),
     AngularFireDatabaseModule,
 <<<<<<< HEAD
+<<<<<<< HEAD
     BrowserModule,
     FormsModule
+=======
+    BrowserModule
+>>>>>>> 3f6eb4d3c28741a62e22a4418a5ee7b58ee505d6
 =======
     BrowserModule
 >>>>>>> 3f6eb4d3c28741a62e22a4418a5ee7b58ee505d6

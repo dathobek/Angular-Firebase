@@ -15,7 +15,10 @@ export class EmployeeService {
     return this.employeelist;
   }
 
+
   //putting data into FireBase database
+
+
   insertData(employee: Employee){
     this.employeelist.push({
       name: employee.name,
@@ -25,7 +28,10 @@ export class EmployeeService {
     });
   }
 
+
   //Updating data to FireBase Database
+
+
   updateData(employee: Employee){
     this.employeelist.update(employee.$key,
       {
@@ -37,7 +43,10 @@ export class EmployeeService {
     });
   }
 
+
   //Delete Data From FireBase Database
+
+
   deleteData($key: string){
     this.employeelist.remove($key)
   }
