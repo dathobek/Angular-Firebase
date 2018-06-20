@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
@@ -21,11 +23,11 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     // initializing firebase.
     AngularFireModule.initializeApp(environment.FirebaseConfig),
     AngularFireDatabaseModule,
-
-
+    ToastrModule.forRoot(),
     BrowserModule,
     FormsModule,
     BrowserModule
+   
     
   ],
   providers: [],
