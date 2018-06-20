@@ -13,7 +13,7 @@ export class EmployeeComponent implements OnInit {
   constructor(private employeeService: EmployeeService,private tostr: ToastrService) { }
 
   ngOnInit() {
-    this.employeeService.getData();
+    //this.employeeService.getData();
     this.resetForm();
   }
 

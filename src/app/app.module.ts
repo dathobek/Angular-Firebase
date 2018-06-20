@@ -9,6 +9,7 @@ import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 import { ToastrModule } from 'ngx-toastr';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 
 
@@ -26,7 +27,8 @@ import { ToastrModule } from 'ngx-toastr';
     ToastrModule.forRoot(),
     BrowserModule,
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    AngularFireModule
    
     
   ],
