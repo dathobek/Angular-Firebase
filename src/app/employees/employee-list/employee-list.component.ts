@@ -32,4 +32,8 @@ export class EmployeeListComponent implements OnInit {
     this.employeeService.selectedemployee = Object.assign({},emp);
   }
 
+  onDelete(key : string){
+    this.employeeService.deleteData(key);
+  }
+
 }

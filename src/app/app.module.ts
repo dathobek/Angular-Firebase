@@ -10,6 +10,7 @@ import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { EmployeeService } from './employees/Shared/employee.service';
 
 
 
