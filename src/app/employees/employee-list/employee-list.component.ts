@@ -30,6 +30,7 @@ export class EmployeeListComponent implements OnInit {
 
   onEdit(emp : Employee){
     this.employeeService.selectedemployee = Object.assign({},emp);
+  
   }
 
   onDelete(key : string){

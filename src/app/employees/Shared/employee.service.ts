@@ -28,9 +28,7 @@ export class EmployeeService {
     });
   }
 
-
   //Updating data to FireBase Database
-
 
   updateData(employee: Employee){
     this.employeelist.update(employee.$key,

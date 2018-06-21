@@ -11,3 +11,10 @@ button:hover,a.btn:hover{
     background-color: cadetblue;
     
 } */
+
+
+.jumbotron{
+    background-color: #008080;
+    /* background:url(./assets/images/office.jpg) no-repeat;
+    background-size: cover; */
+}
