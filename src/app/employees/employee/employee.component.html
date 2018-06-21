@@ -1,7 +1,6 @@
 
 
 <form #employeeForm="ngForm" (ngSubmit) = "onSubmit(employeeForm)">
-  <imput type="hidden" name="$key" #$key="ngModel" [(ngModel)]="employeeService.selectedemployee.$key" />
   <div class="form-group">
     <label >Name</label>
     <input class="form-control" name="name" #name="ngModel" [(ngModel)]="employeeService.name" placeholder="FullName"  required>

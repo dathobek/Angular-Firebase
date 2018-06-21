@@ -1,8 +1,15 @@
 <h6 class="text-center">Employee Details</h6><br/>
 <table class="table table-sm table-hover">
+  <tr>
+     <th>Employee NAmes</th>
+     <th>Employee Position</th>
+     
+  </tr>
   <tr *ngFor="let employee of employeelist">
+  
     <td>{{employee.name}}</td>
     <td>{{employee.position}}</td>
+   
 
     <a class="btn" (click)="onEdit(employee)">
       <i class="fa fa-pencil-square-o"></i>
@@ -12,5 +19,6 @@
       </a>
 
   </tr>
+  
 
 </table>
