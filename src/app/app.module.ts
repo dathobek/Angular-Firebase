@@ -13,6 +13,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { EmployeeService } from './employees/Shared/employee.service';
 import { RoutingModule } from './/routing.module';
 import { SignupComponent } from './signup/signup.component';
+import { AuthService } from './auth.service';
 
 
 
@@ -38,7 +39,7 @@ import { SignupComponent } from './signup/signup.component';
    
     
   ],
-  providers: [],
+  providers: [EmployeeService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,6 +7,7 @@ import {EmployeesComponent} from './employees/employees.component';
 
 
 const route: Routes =[
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
    {path: 'employees', component: EmployeesComponent}
   //{path: '', component:},
 ] 
