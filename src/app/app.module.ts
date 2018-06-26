@@ -11,6 +11,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
 import { ToastrModule } from 'ngx-toastr';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { EmployeeService } from './employees/Shared/employee.service';
+import { RoutingModule } from './/routing.module';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -19,7 +21,8 @@ import { EmployeeService } from './employees/Shared/employee.service';
     AppComponent,
     EmployeesComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    SignupComponent
   ],
   imports: [
     // initializing firebase.
@@ -29,7 +32,9 @@ import { EmployeeService } from './employees/Shared/employee.service';
     BrowserModule,
     FormsModule,
     BrowserModule,
-    AngularFireModule
+    AngularFireModule,
+    AngularFirestoreModule,
+    RoutingModule
    
     
   ],
