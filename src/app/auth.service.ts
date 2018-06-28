@@ -15,15 +15,15 @@ export class AuthService {
    }
 
    //Coding to Trigger login
-   login(email:string,password:string){
-    this.afAuth.auth.signInWithEmailAndPassword(email,password)
-     .then(value=>{
-      this.router.navigateByUrl('/profile')
-     })
-     .catch(err=>{
-      console.log('Something went wrong ', err.message)
-     })
-  }
+  //  loginE(email:any,password:any){
+  //   this.afAuth.auth.signInWithEmailAndPassword(email,password)
+  //    .then(value=>{
+  //     this.router.navigateByUrl('/employees')
+  //    })
+  //    .catch(err=>{
+  //     console.log('Something went wrong ', err.message)
+  //    })
+  // }
 
 
 }

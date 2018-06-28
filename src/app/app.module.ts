@@ -12,8 +12,8 @@ import { ToastrModule } from 'ngx-toastr';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { EmployeeService } from './employees/Shared/employee.service';
 import { RoutingModule } from './/routing.module';
-import { SignupComponent } from './signup/signup.component';
 import { AuthService } from './auth.service';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -23,7 +23,8 @@ import { AuthService } from './auth.service';
     EmployeesComponent,
     EmployeeComponent,
     EmployeeListComponent,
-    SignupComponent
+    LoginComponent,
+
   ],
   imports: [
     // initializing firebase.
@@ -39,7 +40,7 @@ import { AuthService } from './auth.service';
    
     
   ],
-  providers: [EmployeeService,AuthService],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
